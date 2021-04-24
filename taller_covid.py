@@ -30,6 +30,8 @@ df.loc[df['Nombre departamento'] ==
        'BARRANQUILLA', 'Nombre departamento'] = 'ATLANTICO'
 df.loc[df['Nombre departamento'] == 
        'CARTAGENA', 'Nombre departamento'] = 'BOLIVAR'
+df.loc[df['Nombre departamento'] == 
+       'STA MARTA D.E ', 'Nombre departamento'] = 'MAGDALENA'
 # Punto 1: Número de casos de Contagiados en el País.
 C = df[df['Ubicación del caso']== 'Casa'].shape[0]
 H = df[df['Ubicación del caso']== 'Hospital'].shape[0]
